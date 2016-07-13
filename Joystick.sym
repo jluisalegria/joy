@@ -1,0 +1,347 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017-01A USB_stack_status
+01B     USTATCopy
+01C     usb_state
+01D     __setup_0_tx_size
+01E     USB_address_pending
+01F-020 usb_getdesc_ptr
+021-022 usb_getdesc_len
+023     USB_Interface
+024-037 TxUSB
+038     connected
+039     enumerated
+03A-041 rx_msg
+042-057 tx_msg
+058     NextChar
+059.0   fTX
+059.1   fInicio
+059.2   fLeer
+05A     i
+05B     rNroCanal
+05C     rTiempo
+05D     txlen
+05E     txpoint
+05F     rAntBot1a8
+060     FpBtn1a8
+060.0   fp1
+060.1   fp2
+060.2   fp3
+060.3   fp4
+060.4   fp5
+060.5   fp6
+060.6   fp7
+060.7   fp8
+061     rEncDir
+061.0   Dir1
+061.1   Dir2
+061.2   Dir3
+061.3   Dir4
+061.4   Dir5
+061.5   Dir6
+061.6   Dir7
+061.7   Dir8
+062     Eje0
+063-064 Eje1
+065-066 Eje2
+067-068 Eje3
+069-06A Eje4
+06B-06C Eje5
+06D-06E Eje6
+06F-070 Eje7
+071-072 Eje8
+073     Btn1a8
+073.0   Btn1
+073.1   Btn2
+073.2   Btn3
+073.3   Btn4
+073.4   Btn5
+073.5   Btn6
+073.6   Btn7
+073.7   Btn8
+074.0   Btn9
+074     Btn9a16
+074.1   Btn10
+074.2   Btn11
+074.3   Btn12
+074.4   Btn13
+074.5   Btn14
+074.6   Btn15
+074.7   Btn16
+075     Btn17a24
+076     Btn24a32
+077-078 MAIN.Trim
+079     MAIN.buffer
+07A     MAIN.rTemp
+07B     MAIN.temp
+07C     MAIN.temp1
+07D     usb_put_packet.endpoint
+07D     usb_detach.@SCRATCH1
+07D     usb_task.@SCRATCH1
+07D     MAIN.@SCRATCH1
+07E-07F usb_put_packet.ptr
+07E     @delay_ms1.P1
+080-081 usb_put_packet.len
+082     usb_put_packet.tgl
+083-084 usb_put_packet.buff_add
+085     usb_put_packet.@SCRATCH1
+086     usb_put_packet.@SCRATCH2
+08E     usb_isr.TRNAttempts
+08F     usb_isr_tok_dne.en
+08F     usb_token_reset.i
+08F     usb_isr.@SCRATCH1
+090     usb_isr_tok_dne.pidKey
+090     usb_token_reset.@SCRATCH1
+091     usb_endpoint_stalled.endpoint
+091     usb_isr_tkn_setup_StandardInterface.curr_config
+091     usb_flush_out.endpoint
+091     usb_flush_in.endpoint
+091     usb_set_configured.config
+091     usb_stall_ep.endpoint
+091     usb_isr_tok_in_dne.endpoint
+091     usb_unstall_ep.endpoint
+091     usb_isr_tok_out_dne.endpoint
+091     usb_isr_tok_dne.@SCRATCH1
+091     usb_token_reset.@SCRATCH2
+092.0   usb_unstall_ep.direction
+092     usb_set_configured.en
+092     usb_set_address.address
+092.0   usb_stall_ep.direction
+092-093 usb_flush_in.len
+092.0   usb_endpoint_stalled.direction
+092     usb_copy_desc_seg_to_ep.i
+092     usb_flush_out.tgl
+092     usb_isr_tkn_setup_StandardInterface.@SCRATCH1
+092     usb_Get_Descriptor.@SCRATCH1
+093     usb_endpoint_stalled.st
+093-094 usb_set_configured.addy
+093     usb_flush_out.i
+093     usb_copy_desc_seg_to_ep.c
+093     usb_stall_ep.@SCRATCH1
+093     usb_unstall_ep.@SCRATCH1
+093     usb_isr_tkn_setup_StandardInterface.@SCRATCH2
+094     usb_request_send_response.len
+094-095 usb_flush_out.len
+094     usb_flush_in.tgl
+094     usb_stall_ep.@SCRATCH2
+094     usb_unstall_ep.@SCRATCH2
+094     usb_endpoint_stalled.@SCRATCH1
+094     usb_copy_desc_seg_to_ep.@SCRATCH1
+095     usb_flush_in.i
+095     usb_set_configured.new_uep
+095     usb_stall_ep.@SCRATCH3
+095     usb_unstall_ep.@SCRATCH3
+095     usb_endpoint_stalled.@SCRATCH2
+095     usb_copy_desc_seg_to_ep.@SCRATCH2
+096-097 usb_set_configured.len
+096     usb_tbe.en
+096     usb_flush_in.@SCRATCH1
+096     usb_flush_out.@SCRATCH1
+096     usb_stall_ep.@SCRATCH4
+096     usb_unstall_ep.@SCRATCH4
+097     usb_tbe.@SCRATCH1
+097     usb_flush_in.@SCRATCH2
+097     usb_flush_out.@SCRATCH2
+098     usb_set_configured.i
+098     usb_tbe.@SCRATCH2
+098     usb_flush_in.@SCRATCH3
+098     usb_flush_out.@SCRATCH3
+099     usb_disable_endpoints.i
+099     usb_tbe.@SCRATCH3
+099     usb_flush_in.@SCRATCH4
+099     usb_flush_out.@SCRATCH4
+099     usb_set_configured.@SCRATCH1
+09A     usb_disable_endpoint.en
+09A     usb_set_configured.@SCRATCH2
+09B     usb_endpoint_is_valid.endpoint
+09B     usb_set_configured.@SCRATCH3
+09B     usb_disable_endpoint.@SCRATCH1
+09C.0   usb_endpoint_is_valid.direction
+09C     usb_set_configured.@SCRATCH4
+09C     usb_disable_endpoint.@SCRATCH2
+09D     usb_disable_endpoint.@SCRATCH3
+09D     usb_endpoint_is_valid.@SCRATCH1
+09E     usb_disable_endpoint.@SCRATCH4
+400-4AB g_USBRAM
+F66     UFRML
+F67     UFRMH
+F68     UIR
+F68.0   UIR_URST
+F68.1   UIR_UERR
+F68.2   UIR_ACTV
+F68.3   UIR_TRN
+F68.4   UIR_IDLE
+F68.5   UIR_STALL
+F68.6   UIR_SOF
+F69.0   UIE_URST
+F69     UIE
+F69.1   UIE_UERR
+F69.2   UIE_ACTV
+F69.3   UIE_TRN
+F69.4   UIE_IDLE
+F69.5   UIE_STALL
+F69.6   UIE_SOF
+F6A     UEIR
+F6B     UEIE
+F6C     U1STAT
+F6D     UCON
+F6D.1   UCON_SUSPND
+F6D.2   UCON_RESUME
+F6D.3   UCON_USBEN
+F6D.4   UCON_PKTDIS
+F6D.5   UCON_SE0
+F6D.6   UCON_PBRST
+F6E     UADDR
+F6F     UCFG
+F70-F7F g_UEP
+FA0.5   USBIE
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  usb_clear_trn
+0000AE  usb_ep_tx_type.call
+0000BE  usb_ep_tx_type.data
+0000CE  usb_ep_tx_size.call
+0000DE  usb_ep_tx_size.data
+0000FE  usb_ep_rx_size.call
+00010E  usb_ep_rx_size.data
+00012E  USB_CLASS_SPECIFIC_DESC.call
+00013E  USB_CLASS_SPECIFIC_DESC.data
+0001B2  USB_CLASS_SPECIFIC_DESC_LOOKUP.call
+0001C2  USB_CLASS_SPECIFIC_DESC_LOOKUP.data
+0001C4  USB_CLASS_SPECIFIC_DESC_LOOKUP_SIZE.call
+0001D4  USB_CLASS_SPECIFIC_DESC_LOOKUP_SIZE.data
+0001D8  USB_CONFIG_DESC.call
+0001E8  USB_CONFIG_DESC.data
+000212  USB_NUM_INTERFACES.call
+000222  USB_NUM_INTERFACES.data
+000224  USB_CLASS_DESCRIPTORS.call
+000234  USB_CLASS_DESCRIPTORS.data
+000236  USB_DEVICE_DESC.call
+000246  USB_DEVICE_DESC.data
+000258  USB_STRING_DESC_OFFSET.call
+000268  USB_STRING_DESC_OFFSET.data
+00026C  USB_STRING_DESC.call
+00027C  USB_STRING_DESC.data
+0002BA  usb_isr_activity
+0002CA  usb_init_ep0_setup
+0002EA  usb_isr_stall
+0002F8  usb_isr_uerr
+000300  usb_endpoint_is_valid
+000356  usb_disable_endpoint
+0003A2  usb_disable_endpoints
+0003B8  usb_token_reset
+0003E0  usb_isr_rst
+00040A  usb_isr_uidle
+000414  usb_isr_sof
+00041A  usb_request_send_response
+000420  usb_request_stall
+000424  usb_copy_desc_seg_to_ep
+0004CE  @goto11615
+0004F0  usb_Get_Descriptor
+00062A  usb_set_configured
+0007DC  usb_isr_tkn_setup_StandardDevice
+000886  usb_isr_tkn_setup_StandardInterface
+000924  usb_unstall_ep
+000968  usb_stall_ep
+0009AE  usb_endpoint_stalled
+000A04  usb_isr_tkn_setup_StandardEndpoint
+000A62  usb_isr_tkn_setup_ClassInterface
+000A6E  usb_isr_tok_setup_dne
+000AA0  usb_flush_out
+000B66  usb_tbe
+000BA6  usb_flush_in
+000C7C  usb_isr_tok_out_dne
+000C82  usb_set_address
+000C98  usb_finish_set_address
+000CA6  usb_isr_tok_in_dne
+000CBE  usb_isr_tok_dne
+000D88  usb_isr
+000DFA  RTCC_isr
+000E02  TIMER1_int
+000E08  @delay_ms1
+000E30  usb_detach
+000E54  usb_init_cs
+000E5A  usb_attach
+000E7C  usb_task
+000EA0  usb_enumerated
+000EA6  usb_debug_task
+000EB0  usb_put_packet
+000F52  @cinit1
+000F52  MAIN
+000FA6  @cinit2
+
+Project Directory:
+    C:\Users\INADEM\Documents\1. Firmware\Joystick\Chuy\
+
+Project Files:
+    Joystick.c                                              [29-jun.-16 18:35  CRC=7D859143]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F2455.h [12-nov.-13 14:35  CRC=13DBFC6E]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\pic18_usb.h [11-mar.-13 16:56  CRC=A13AD10C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_hw_layer.h [31-ago.-10 14:26  CRC=8105D92F]
+    PPM_USB_HID3.h                                          [29-jun.-16 18:35  CRC=87E5CE67]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb.h [26-feb.-13 14:40  CRC=0402FA1E]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb.c [09-jul.-13 14:06  CRC=88E8C8E2]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\pic18_usb.c [10-sep.-13 14:56  CRC=24805598]
+
+Source signature=11747483
+
+Units:
+    Joystick (main)
+
+Compiler Settings:
+    Processor:      PIC18F2455
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Joystick.xsym
+    Errors:      Joystick.err
+    Ext Symbols: Joystick.esym
+    INHX32:      Joystick.hex
+    Symbols:     Joystick.sym
+    List:        Joystick.lst
+    Debug/COFF:  Joystick.cof
+    Project:     Joystick.ccspjt
+    Call Tree:   Joystick.tre
+    Statistics:  Joystick.STA

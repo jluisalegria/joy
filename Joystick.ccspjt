@@ -1,0 +1,20 @@
+[PROJECT]
+Target=Joystick.hex
+Processor_Text=PIC18F2455
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=Joystick.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[Joystick.c]
+Type=4
+[mru-list]
+1=Joystick.c
+[Opened Files]
+1=Joystick.c
+2=
+3=
+[Units]
+Count=1
+1=Joystick (main)
